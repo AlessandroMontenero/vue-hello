@@ -8,9 +8,12 @@
     <title>vue-hello</title>
   </head>
   <body>
-    <div id="app" class="logoContainer">
-      <img :="objectOfImgAttrs" />
-      <h1 :style="'color:' + [messageColor]">{{ message }}</h1>
+    <div id="app" class="Container">
+      <input type="text" v-model="message" />
+      <div class="logoContainer">
+        <img :="objectOfImgAttrs" />
+        <h1 :style="'color:' + [messageColor]">Hello, {{ message }}!</h1>
+      </div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/script.js"></script>

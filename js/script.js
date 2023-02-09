@@ -3,11 +3,11 @@ const { createApp } = Vue
 
 /* new vue application */
 let app = createApp({
-    
+
  data() {
   return {
     /* Message to display */
-    message: 'Hello, Vue!',
+    message: 'Vue',
     /* Color */
     messageColor: 'rgb(55, 174, 121)',
     /* Object with image attributes */
