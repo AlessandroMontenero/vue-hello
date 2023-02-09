@@ -1,15 +1,23 @@
-
+/* Creating a new vue istance*/
 const { createApp } = Vue
 
-createApp({
+/* new vue application */
+let app = createApp({
+    
  data() {
   return {
-    message: 'Hello Vue!',
+    /* Message to display */
+    message: 'Hello, Vue!',
+    /* Color */
     messageColor: 'rgb(55, 174, 121)',
+    /* Object with image attributes */
     objectOfImgAttrs: {
         class: 'logoImg',
         src: './img/Vue.js_Logo_2.svg.png'
     }
   }
 }
-}).mount('#app')
+})
+
+/* mount vue application */
+app.mount('#app')
