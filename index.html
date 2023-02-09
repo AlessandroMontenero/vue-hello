@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="app" class="logoContainer">
-      <img :src="[imgPath]" :class="[imgClass]" alt="" />
+      <img :="objectOfImgAttrs" />
       <h1 :style="'color:' + [messageColor]">{{ message }}</h1>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
